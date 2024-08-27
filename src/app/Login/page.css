@@ -1,0 +1,82 @@
+/* page.css */
+.body {
+    width: 100%;
+    height: 100vh;
+    background-image: url("./photos/top-view-pink-keyboard-with-copyspace.jpg"); /* Update as needed */
+    background-size: cover; /* Ensure the background covers the entire viewport */
+    background-position: center; /* Center the background image */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0; /* Remove default margins */
+}
+
+.container {
+    width: 90%; /* Adjust width to be responsive */
+    max-width: 500px; /* Set a maximum width */
+    height: auto;
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box; /* Ensure padding is included in width */
+}
+
+.containerInput {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.inputField {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    width: 100%; /* Make input fields responsive */
+}
+
+.submitButton {
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%; /* Make submit button responsive */
+}
+
+.submitButton:hover {
+    background-color: darkblue;
+}
+
+.error {
+    color: red;
+}
+
+.containerCreateAccount {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.containerCreateAccount p {
+    margin: 0;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 600px) {
+    .container {
+        width: 95%; /* Increase width for small screens */
+        padding: 15px; /* Adjust padding for small screens */
+    }
+
+    .inputField, .submitButton {
+        font-size: 14px; /* Reduce font size for smaller screens */
+        padding: 8px; /* Adjust padding for smaller screens */
+    }
+
+    .submitButton {
+        padding: 12px; /* Adjust padding to ensure usability */
+    }
+}
