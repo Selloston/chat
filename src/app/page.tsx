@@ -58,10 +58,7 @@ const ChatPage = () => {
       <main className="chat-container">
         <div className="messages">
           {messages.map((msg) => (
-            <div
-              key={msg.id}
-              className={`message ${msg.uid === user?.uid ? "sent" : "received"}`}
-            >
+            <div key={msg.id}className={`message ${msg.uid === user?.uid ? "sent" : "received"}`} >
               {/* Escape any special characters if necessary */}
               {msg.text}
             </div>
