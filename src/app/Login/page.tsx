@@ -61,7 +61,7 @@ const LoginPage = () => {
           {error && <p className="error">{error}</p>}
         </form>
         <div className="containerCreateAccount">
-          <p>Don't have an account?</p>
+          <p>Dont have an account?</p>
           <Link href="Sign">Create Account</Link>
         </div>
       </div>
