@@ -1,4 +1,3 @@
-// ChatPage.tsx
 'use client';
 
 import React, { useEffect, useState } from 'react';
@@ -63,6 +62,7 @@ const ChatPage = () => {
               key={msg.id}
               className={`message ${msg.uid === user?.uid ? 'sent' : 'received'}`}
             >
+              {/* Escape any special characters if necessary */}
               {msg.text}
             </div>
           ))}
